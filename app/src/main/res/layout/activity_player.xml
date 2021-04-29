@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".UI.PLAYLIST.PlayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/music_icon"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/songname"
+            android:text="SONG NAME"
+            android:textAlignment="center"
+            android:textSize="@dimen/margin_20"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_20"
+            android:fontFamily="serif"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white"
+            android:textIsSelectable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/seekbar"
+                android:layout_alignParentBottom="true"
+                />
+
+
+            <Button
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="@dimen/margin_60"
+                android:background="@drawable/ic_baseline_pause_24"
+                android:id="@+id/pause"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:layout_width="@dimen/margin_45"
+                android:layout_height="@dimen/margin_45"
+                android:background="@drawable/ic_baseline_fast_forward_24"
+                android:id="@+id/forward"
+                android:layout_marginTop="20dp"
+
+                android:layout_toRightOf="@+id/pause"/>
+
+            <Button
+                android:layout_width="@dimen/margin_45"
+                android:layout_height="@dimen/margin_45"
+                android:background="@drawable/ic_baseline_fast_rewind_24"
+                android:id="@+id/backward"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/pause"/>
+
+            <Button
+                android:layout_width="@dimen/margin_45"
+                android:layout_height="@dimen/margin_45"
+                android:background="@drawable/ic_baseline_shuffles"
+                android:id="@+id/shuffle"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_toLeftOf="@+id/backward"/>
+
+            <Button
+                android:layout_width="@dimen/margin_45"
+                android:layout_height="@dimen/margin_45"
+                android:background="@drawable/ic_baseline_menu_24"
+                android:id="@+id/menu"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@+id/forward"/>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

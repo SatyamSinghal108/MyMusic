@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".UI.RESET.OTPActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_100"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/margin_100"
+            android:layout_height="@dimen/margin_100"
+            android:src="@drawable/ic_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:text="OTP Verification"
+            android:textSize="35sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/margin_10"
+            android:text="Enter the code send to registered Mobile No."/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/margin_45"
+                android:layout_height="@dimen/margin_45"
+                android:background="@color/Grey"
+                android:layout_margin="@dimen/margin_8dp"
+                android:layout_weight="0.2">
+                <EditText
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:id="@+id/et1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/margin_45"
+                android:layout_height="@dimen/margin_45"
+                android:background="@color/Grey"
+                android:layout_margin="@dimen/margin_8dp"
+                android:layout_weight="0.2">
+                <EditText
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:id="@+id/et2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="@dimen/margin_45"
+            android:layout_height="@dimen/margin_45"
+            android:background="@color/Grey"
+                android:layout_margin="@dimen/margin_8dp"
+                android:layout_weight="0.2">
+            <EditText
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:id="@+id/et3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/margin_45"
+                android:layout_height="@dimen/margin_45"
+                android:background="@color/Grey"
+                android:layout_margin="@dimen/margin_8dp"
+                android:layout_weight="0.2">
+                <EditText
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:id="@+id/et4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="@dimen/margin_8dp"
+                android:layout_width="@dimen/margin_45"
+                android:layout_height="@dimen/margin_45"
+                android:background="@color/Grey"
+                android:layout_weight="0.2">
+                <EditText
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:id="@+id/et5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="@dimen/margin_8dp"
+                android:layout_width="@dimen/margin_45"
+                android:layout_height="@dimen/margin_45"
+                android:background="@color/Grey"
+                android:layout_weight="0.2">
+                <EditText
+                    android:id="@+id/et6"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Did'nt recieve the code? "
+                android:textColor="@color/Grey"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend code"
+                android:textColor="@color/red"
+                android:textSize="@dimen/margin_20"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VERIFY"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Music</string>
+    <string name="Quote">LISTEN TO MUSIC THAT CONNECTS PEOPLE</string>
+    <string name="login_title">LOGIN</string>
+    <string name="emailhint">Email Id...</string>
+    <string name="passwordhint">Password...</string>
+    <string name="signup_title">Sign Up</string>
+    <string name="login_forgot">Forgot Password ?</string>
+    <string name="login">LOGIN</string>
+    <string name="passwordconf">Confirm Password...</string>
+    <string name="number">Cell Phone...</string>
+    <string name="firstname">First Name...</string>
+    <string name="midname">Middle Name(if any)...</string>
+    <string name="lastname">Last Name...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="newPass">New Password...</string>
+    <string name="done">Done</string>
+</resources>
